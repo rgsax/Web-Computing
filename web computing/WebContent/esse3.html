@@ -1,0 +1,320 @@
+<!DOCTYPE html><html id="top" lang="it">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Homepage area pubblica, Universit&agrave; di UNICAL</title>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Servizi online dell'ateneo" name="description">
+<!--[if lt IE 9 ]>
+							<script type="text/javascript">
+							// Fix for IE ignoring relative base tags.
+							(function() {
+								var baseTag = document.getElementsByTagName('base')[0];
+								baseTag.href = baseTag.href;
+							})();
+							</script>
+						<![endif]-->
+<base href="https://unical.esse3.cineca.it/">
+<link href="css/layout/app_legacy.css" rel="stylesheet">
+<link href="css/cornice.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/templateCommon.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/standard.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/modules.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/custom.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/jquery-ui-timepicker-addon.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/jquery-ui.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/jquery.fileupload.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/ui.jqgrid.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/fullcalendar.css" media="all" type="text/css" rel="stylesheet">
+<link href="css/footable.css" media="all" type="text/css" rel="stylesheet">
+<script src="JavaScript/utils.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/jquery-1.11.2.min.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/jquery-ui/js/jquery-ui.min.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/jqgrid/js/jquery.jqGrid.min.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/jqgrid/src/grid.tbltogrid.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/jqgrid/js/i18n/grid.locale-it.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/timepicker/js/jquery-ui-timepicker-addon.min.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/timepicker/js/i18n/jquery-ui-timepicker-it.js" charset="UTF-8" type="text/javascript"></script><script src="JavaScript/jquery/jquery-ui/js/i18n/datepicker-it.js" charset="UTF-8" type="text/javascript"></script><script src="JavaScript/jquery/footable/js/footable.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/stickytableheaders/js/jquery.stickytableheaders.min.js" charset="iso-8859-1" type="text/javascript"></script><script src="JavaScript/jquery/fileupload/js/jquery.iframe-transport.js"></script><script src="JavaScript/jquery/fileupload/js/jquery.fileupload.js"></script><script src="JavaScript/widgetChunkFileUpload.js"></script>
+</head>
+<body onload="javascript:randomBackgroundImageOnScritta('1')" data-xsl="/xsl/AreaStrutturaDidattica.xsl" class="has-menuInPagina secondaryMenuTop bootstrap-off">
+<noscript>
+<style> .jsonly { display: none } </style>
+</noscript>
+<div style="width: 100%; position: fixed; bottom: 0px; z-index: 1000000; color: #FFF; background: #363636; padding: 25px 0" role="alert" id="cookies">
+<div style="float: left; padding: 0 7em 0 2em">
+<p style="margin: 0">Questo sito utilizza un cookie tecnico per consentire la corretta navigazione. <span class="jsonly">Confermando accetti il suo utilizzo.</span> Se vuoi saperne di pi&ugrave; e leggere come disabilitarne l'uso, consulta l'<a style="color: #fff; text-decoration: underline" href="InformativaCookie.do">informativa estesa</a>.</p>
+</div>
+<div style="float: right; position: absolute; top: 50%; transform: translateY(-50%); right: 2em" class="jsonly">
+<p style="margin: 0">
+<button style="background: #0095CD; border-radius: 8px; border: none; color: #FFF; text-decoration: none; padding: 10px 20px" role="button" id="cookiesConferma">OK</button>
+</p>
+</div>
+</div>
+<script>
+				var cookies;
+				jQuery(document).ready(function($) {
+				    cookies = new Cookies();
+				    cookies.controlla();
+
+					$('#cookies button').click(function() {
+						cookies.set();
+					})
+				});
+
+				Cookies = function(){
+
+				    var me = this;
+					var nome = 'accepted_cookie_policy';
+
+				    this.controlla = function() {
+				        me.get(nome) ? me.chiudi() : me.mostra();
+				    };
+
+				    this.mostra = function() {
+				        $('#cookies').show();
+				    };
+
+				    this.chiudi = function() {
+				        $('#cookies').hide();
+				    };
+
+				    this.set = function() {
+				    	me.chiudi();
+
+						var d = new Date();
+						d.setYear( d.getFullYear()+1);
+						
+						var path = "/" + document.getElementsByTagName('base')[0].href.split('/')[3];
+						
+				        document.cookie = nome + '=true; expires=' + d.toUTCString() + '; path=' + path;
+
+						$('#shortcut').focus()
+
+						return false;
+				    };
+
+				    this.get = function(name) {
+				        var value = "; " + document.cookie;
+				        var parts = value.split("; " + name + "=");
+				        if (parts.length == 2) return parts.pop().split(";").shift();
+				    };
+				};
+
+			</script>
+<header class="masthead">
+<div class="l-container">
+<!--INIZIO TEMPLATE CONTAINER TESTATA-->
+<div class="" id="testata">
+<!--INIZIO TEMPLATE CONTAINER SCRITTA-->
+<div class="" id="scritta">
+<!--INIZIO TEMPLATE HEADER ATENEO-->
+<div class="header-hx header-h1" id="ateneo">
+<h1>UNICAL</h1>
+</div>
+<!--FINE TEMPLATE HEADER ATENEO-->
+</div>
+<!--FINE TEMPLATE CONTAINER SCRITTA-->
+</div>
+<!--FINE TEMPLATE CONTAINER TESTATA-->
+</div>
+<!--INIZIO TEMPLATE CONTAINER BARRA-GENERALE-->
+<div class="" id="barra-generale">
+<div class="container-split2-left-noborder">
+<!--INIZIO TEMPLATE LIST MENU-GENERALE-->
+<div id="secondary-menu" class="secondary-menu">
+<div class="l-container">
+<div class="secondary-menu_top">
+<button data-toggle="secondary-menu-list" aria-controls="secondary-menu-list" aria-expanded="false" role="button" id="focus-secondario" class="secondary-menu_button" href="">Link utili<i data-toggle-icon-closed="true" aria-hidden="true" class="fa fa-chevron-right"></i><i data-toggle-icon-open="true" aria-hidden="true" class="fa fa-chevron-down"></i></button>
+</div>
+<nav id="secondary-menu-list" class="secondary-menu-list">
+<h2 id="menusecondario" class="accessibility-item">Link utili</h2>
+<ul>
+<li>
+<a title="Home" href="Home.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Home</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<!--FINE TEMPLATE LIST MENU-GENERALE-->
+</div>
+<div class="container-split2-right">
+<div class="lingue">
+<span class="lang-flag eng"><a href="/Home.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?cod_lingua=eng"><abbr title="eng">eng</abbr></a></span>&nbsp;<span class="lang-flag ita"><a href="/Home.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?cod_lingua=ita"><abbr title="ita">ita</abbr></a></span>&nbsp;<span class="lang-flag spa"><a href="/Home.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?cod_lingua=spa"><abbr title="spa">spa</abbr></a></span>
+</div>
+</div>
+<br style="clear:both">
+</div>
+<!--FINE TEMPLATE CONTAINER BARRA-GENERALE-->
+</header>
+<section class="l-content-container">
+<div class="l-container">
+<div class="l-sidebar">
+<aside class="l-sidebar-left">
+<div aria-hidden="true" class="l-sidebar-left-placeholder"></div>
+</aside>
+<main aria-live="polite" id="main" class="l-sidebar-right">
+<!--INIZIO TEMPLATE CONTAINER CORPO-->
+<div class="" id="corpo">
+<!--INIZIO TEMPLATE CONTAINER NAVBOX-->
+<div class="" id="menu-principale">
+<!--INIZIO TEMPLATE CONTAINER MENU-PRINCIPALE-UP-->
+<div class="" id="menu-principale-up">
+<!--INIZIO TEMPLATE CONTAINER MENU-IDENTIF-AREA-->
+<div class="" id="menu-identif-area">
+<!--INIZIO TEMPLATE HEADER TITOLO-MENU-PRINCIPALE-->
+<div class="header-hx header-h1" id="titolo-menu-principale">
+<h1>Guest</h1>
+</div>
+<!--FINE TEMPLATE HEADER TITOLO-MENU-PRINCIPALE-->
+<!--INIZIO LISTA FITTIZIA LISTA-MENU-PRINCIPALE-->
+<ul id="identif-area">
+<li class="has-children" id="menu-open">
+<a href="Home.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?menu_opened_cod=navbox_account_Area_Riservata" aria-expanded="false" aria-controls="10-100"><i aria-hidden="true" class="fa fa-chevron-left"></i>Area Riservata<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+<ul id="10-100">
+<li>
+<a href="Anagrafica/Registrazione.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Registrazione</a>
+</li>
+<li>
+<a href="auth/Logon.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Login</a>
+</li>
+<li>
+<a href="Anagrafica/PasswordDimenticata.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Password dimenticata</a>
+</li>
+</ul>
+</li>
+</ul>
+<!--FINE LISTA FITTIZIA LISTA-MENU-PRINCIPALE-->
+</div>
+<!--FINE TEMPLATE CONTAINER MENU-IDENTIF-AREA-->
+<!--INIZIO TEMPLATE CONTAINER MENU-COMMUNITY-->
+<div class="" id="menu-community">
+<!--INIZIO LISTA FITTIZIA LISTA-MENU-COMMUNITY-->
+<ul id="community"></ul>
+<!--FINE LISTA FITTIZIA LISTA-MENU-COMMUNITY-->
+</div>
+<!--FINE TEMPLATE CONTAINER MENU-COMMUNITY-->
+<!--INIZIO TEMPLATE LIST MENU-TUTTI-->
+<div class="" id="menu-tutti">
+<!--INIZIO TEMPLATE LIST MENU-TUTTI SUB-->
+<br>
+<ul>
+<li class="has-children">
+<a href="Guide/Home.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?menu_opened_cod=navbox_didattica_Guida" aria-expanded="false" aria-controls="1200-100"><i aria-hidden="true" class="fa fa-chevron-left"></i>Guida<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+<ul id="1200-100" class="notOpened">
+<li>
+<a href="Guide/ListaFacolta.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Strutture</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsi.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Tutti i corsi</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsiTriennali.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=LT&ciclounico=N">Corsi di Laurea</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsiMaster1.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=M1">Master 1&deg;livello</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsiSpecMagistr.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=LS&ciclounico=N">Specialistica/Magistrale</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsiSpecMagistrCU.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=LS&ciclounico=S">Specialistica/Magistrale a Ciclo Unico</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsiMaster2.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=M2">Master 2&deg;livello</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsiSpec.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=SP">Corso di Specializzazione</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsi.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=CF">Corsi di Formazione</a>
+</li>
+<li>
+<a href="Guide/ListaFacoltaCorsiDottorati.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?tipocorso_id=D1">Dottorati</a>
+</li>
+<li>
+<a href="Didattica/ElencoConcorsiTipoCorso.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Concorsi</a>
+</li>
+<li>
+<a href="Didattica/ElencoEsaSta.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Esami di Stato</a>
+</li>
+</ul>
+</li>
+<li class="has-children" id="menu-open">
+<a href="ListaTurniFacolta.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?menu_opened_cod=navbox_didattica_Esami" aria-expanded="false" aria-controls="1200-200"><i aria-hidden="true" class="fa fa-chevron-left"></i>Esami<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+<ul id="1200-200">
+<li>
+<a href="ListaAppelliOfferta.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Bacheca Appelli d'esame</a>
+</li>
+<li>
+<a href="ListaTurniFacolta.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Bacheca Esiti Esami</a>
+</li>
+<li>
+<a href="BachecaAppelliDCT.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03">Bacheca Appelli di Laurea</a>
+</li>
+</ul>
+</li>
+<li class="has-children" id="menu-open">
+<a href="Redirect.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?parconfurl=GUOL_INFO_ATENEO&menu_opened_cod=GuideInfoAteneo" aria-expanded="false" aria-controls="1900-100"><i aria-hidden="true" class="fa fa-chevron-left"></i>Informazioni Ateneo<i aria-hidden="true" class="fa fa-chevron-right"></i></a>
+<ul id="1900-100">
+<li>
+<a href="Redirect.do;jsessionid=CEBDA60A149BF3FE2B9CE2BF40CEFB01.esse3-unical-prod-03?parconfurl=GUOL_SEAT">Portale dell'Ateneo</a>
+</li>
+</ul>
+</li>
+</ul>
+<!--FINE TEMPLATE LIST MENU-TUTTI SUB-->
+</div>
+<!--FINE TEMPLATE LIST MENU-TUTTI-->
+<!--INIZIO TEMPLATE CONTAINER MENU-PRINCIPALE-DOWN-->
+<div class="" id="menu-principale-down">&nbsp;</div>
+<!--FINE TEMPLATE CONTAINER MENU-PRINCIPALE-DOWN-->
+</div>
+<!--FINE TEMPLATE CONTAINER MENU-PRINCIPALE-UP-->
+</div>
+<!--FINE TEMPLATE CONTAINER NAVBOX-->
+<!--INIZIO TEMPLATE CONTAINER ESSE3-->
+<div class="" id="esse3">
+<div id="page-title">
+<h1>Portale dei Servizi Web ESSE3 dell'Universit&agrave; della Calabria</h1>
+</div>
+<div id="page-des">
+<p>Questa pagina &egrave; il punto di partenza per accedere ai Servizi Web ESSE3 dell'Universit&agrave; della Calabria.</p>
+</div>
+<div class="" id="column1of1">
+<div class="" id="gestioneUtente-floating">
+<p id="gestioneUtente-text1" class=""></p>
+<p id="gestioneUtente-text2" class="">
+<p>Si prega di utilizzare le funzioni indicate nel men&ugrave; di sinistra per accedere al servizio desiderato.</p>
+<p>
+<h1>Come accedere al Portale dei Servizi Web ESSE3:</h1>
+</p>
+<p>
+<strong>Studenti:</strong> usare come nome utente il codice fiscale in maiuscolo oppure in minuscolo e come password quella utilizzata per accedere ai 
+
+servizi di ateneo (Wifi, ecc.).</p>
+<p>Usa il link 'Password dimenticata' sulla sinistra se hai dimenticato le credenziali di accesso.</p>
+<p>
+<strong>Docenti:</strong> usare come credenziali di accesso quelle del servizio SOLDI specificando la propria matricola dipendente 
+
+senza zeri iniziali. Per gestire la tua password, usa il sistema SOLDI.</p>
+</p>
+<p id="gestioneUtente-text3" class=""></p>
+</div>
+</div>
+<script type="text/javascript">
+								hideShowElementsById();
+								</script>
+</div>
+<!--FINE TEMPLATE CONTAINER ESSE3-->
+</div>
+<!--FINE TEMPLATE CONTAINER CORPO-->
+</main>
+</div>
+</div>
+</section>
+<!--INIZIO TEMPLATE CONTAINER FOOTER-->
+<div class="" id="footer">
+<!--INIZIO TEMPLATE TEXT FOOTER-TEXT-->
+<p id="footer-text" class="text-align-left">
+<a href="InformativaCookie.do">Informativa utilizzo cookie</a> | &copy; CINECA</p>
+<!--FINE TEMPLATE TEXT FOOTER-TEXT-->
+</div>
+<!--FINE TEMPLATE CONTAINER FOOTER-->
+<script src="JavaScript/enquire/enquire.min.js"></script><script src="JavaScript/layout/layout.js"></script><!--FINE TEMPLATE CONTAINER MAIN-->
+</body>
+</html>

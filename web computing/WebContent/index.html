@@ -1,88 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Gestione Segreteria</title>
+<meta charset="UTF-8">
+<title>Riccardo Giordano</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body bgcolor="cyan">
-<!-- commento -->
+<body>
+<nav id="topNav">
 <ul>
-	<li>Home</li>
-	<li>
-		Studenti
-		<ul>
-			<li><a href="gestioneStudenti/studenti.html">Elenco Studenti</a></li>
-			<li>Studenti di un certo corso</li>
-		</ul>
-	</li>
-	<li>Corsi</li>
-	<li>Corsi di laurea</li>
-	<li>Dipartimenti</li>
+	<li><a href="http://unical.it">Home</a></li>
+	<li><a href= "http://www.unical.it/portale/ateneo/mappe/">Mappa</a></li>
+	<li><a href = "http://www.unical.it/portale/portaltemplates/view/search_phone.cfm">Contatti</a></li>
+	<li><a href = "esse3.html">Esse3</a></li>
 </ul>
-<aside>
-	<figure>
-		<a href="http://www.unical.it">
-			<img src="http://www.unical.it/portale/images/logo_unical.png" 
-	width="200" />
-		</a>
-	</figure>
-</aside>
-<h2>
-	Benvenuti nel portale di gestione delle Segreterie Studenti
-</h2>
-<p>
-	Utilizza il menu in alto per 
-	<strong>
-		navigare tra le <i>varie</i> sezioni della pagina
-	</strong>
-</p>
-<p>
-	Ti auguriamo una felice navigazione
-</p>
-<table border="1">
-	<tr>
-		<th>
-			Nome
-		</th>
-		<th>
-			Cognome
-		</th>
-	</tr>
-	<tr>
-		<td>
-			Kristian
-		</td>
-		<td>
-			Reale
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Mario
-		</td>
-		<td>
-			Rossi
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Giorgio
-		</td>
-	</tr>
-</table>
-<section>
-	<article>
-		<header>Dicono di noi</header>
-		La segreteria è un servizio di riferimento che serve per...
-	</article>
-	<article>
-		<header>Centro ICT di Ateneo</header>
-		Dalla pagine accessibile da <a href="www.unical.it">questo link</a>	
-	</article>
-</section>
+</nav>
+<header>
+<h1>Informazioni</h1>
+</header>
+<div class = main>
+<form title="Login" method="post" action = "login">
+	<label>username: </label><input name = "usr" type="text"/><br/>
+	<label>password: </label><input name = "password" type = "password"/><br/>
+	<input type = "submit" value="login"/>
+</form>
+<form action = "search" method = "get">
+	<input name = "q" type = "text"/>
+</form>
+<div id = "info">
+	<img style="float: left" width = "200" height = "200" alt = "Riccardo Giordano" title = "Riccardo Giordano" src = "https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/12009664_1134832039863586_1128775996671100573_n.jpg?_nc_cat=106&_nc_ht=scontent-mxp1-1.xx&oh=0babc80f1642c10eff18c44b6f8d9e1c&oe=5C41D29F"/>
+	Nome: Riccardo<br/>
+	Cognome: Giordano<br/>
+	Data di Nascita: 22/06/1997<br/>
+	Dipartimento: Matematica e Informatica<br/>
+	Corso di Laurea: Informatica
+	Anno di Immatricolazione: 2016
+</div>
 
-<a href="http://www.unical.it">
-	Clicca qui per accedere al sito dell'unical
-</a>
+<div id = "other">
+	<h4>Informazioni aggiuntive:</h4>
+	<nav id="bottomNav">
+		<ul>
+			<li><a href = "carriera.html">Carriera</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="frames">
+	<iframe src="carriera.html" style="width: 50%"></iframe>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
 </body>
 </html>
