@@ -1,4 +1,4 @@
-package persistence;
+package persistence.mariadb;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,6 +9,8 @@ import java.util.Set;
 
 import model.Corso;
 import model.Studente;
+import persistence.DataSource;
+import persistence.PersistenceException;
 import persistence.dao.StudenteDao;
 
 

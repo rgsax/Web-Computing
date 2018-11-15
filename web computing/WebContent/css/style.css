@@ -5,7 +5,7 @@ body {
 }
 
 body * {
-	font-family: 'Comic Sans MS';
+	font-family: 'Comic Neue';
 	margin: 0;
 	padding: 0;
 }
@@ -37,7 +37,7 @@ nav#topNav ul{
 }
 
 nav#topNav li {
-	float: left; 
+	float: left;
 }
 
 nav#topNav a {
@@ -57,8 +57,12 @@ header h1 {
 }
 
 form {
-	border: red solid 3px;
-	width: 350px;
+	width: 500px;
+	padding: 20px;
+}
+
+form div {
+	padding: 10px;
 }
 
 div.main *{
@@ -87,7 +91,7 @@ table {
 	border-collapse: collapse;
 }
 
-table, th, td {	
+table, th, td {
 	border: 2px solid black;
 }
 

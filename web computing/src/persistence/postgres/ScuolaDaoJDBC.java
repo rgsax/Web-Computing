@@ -1,4 +1,4 @@
-package persistence;
+package persistence.postgres;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,10 +9,12 @@ import java.util.List;
 
 import model.Scuola;
 import model.Studente;
+import persistence.DataSource;
+import persistence.PersistenceException;
 import persistence.dao.ScuolaDao;
 
 
-class ScuolaDaoJDBC implements ScuolaDao {
+public class ScuolaDaoJDBC implements ScuolaDao {
 	private DataSource dataSource;
 
 	public ScuolaDaoJDBC(DataSource dataSource) {

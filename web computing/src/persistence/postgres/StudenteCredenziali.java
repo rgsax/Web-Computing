@@ -1,4 +1,4 @@
-package persistence;
+package persistence.postgres;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import model.Studente;
+import persistence.DataSource;
+import persistence.PersistenceException;
 
 public class StudenteCredenziali extends Studente {
 	private DataSource dataSource;

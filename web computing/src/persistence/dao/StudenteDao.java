@@ -3,7 +3,7 @@ package persistence.dao;
 import java.util.List;
 
 import model.Studente;
-import persistence.StudenteCredenziali;
+import persistence.postgres.StudenteCredenziali;
 
 public interface StudenteDao {
 	

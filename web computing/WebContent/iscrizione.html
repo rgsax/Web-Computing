@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<nav id="topNav">
+<ul>
+	<li><a href="http://unical.it">Home</a></li>
+	<li><a href= "http://www.unical.it/portale/ateneo/mappe/">Mappa</a></li>
+	<li><a href = "http://www.unical.it/portale/portaltemplates/view/search_phone.cfm">Contatti</a></li>
+	<li><a href="iscrizione.html">Iscriviti</a></li>
+</ul>
+</nav>
+
+<header>
+	<h1>Iscriviti</h1>
+</header>
+
+<form method="post" action="iscrivi">
+	<fieldset>
+	<legend>DATI</legend>
+	<div>matricola <input type="text" name="matricola"/></div>
+	<div>corso di laurea 
+	<select name="corsoDiLaurea">
+	<option>In attesa di assegnazione</option>
+		<optgroup label="Matematica e Informatica">
+		<option>Matematica</option>
+		<option>Informatica</option>
+		</optgroup>
+		<optgroup label="Fisica">
+		<option>Fisica</option>
+		</optgroup>
+		<optgroup label="Ingegneria Elettronica e Informatica">
+		<option>Ingegneria Informatica</option>
+		<option>Ingegneria Elettronica</option>
+		</optgroup>
+	</select>
+	</div>
+	<div>data di nascita <input type="date" name="dataNascita"/></div>
+	<div>password <input type="password" name="password"/></div>
+	<div><input type="checkbox" id="check" name="check"/> <label for="check">Confermo di essere uno studente</label></div>
+	<div><input type="submit" value="iscriviti"> <input type="reset" value="ripristina"/></div>
+	</fieldset>
+</form>
+
+</body>
+</html>

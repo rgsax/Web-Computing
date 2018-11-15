@@ -4,28 +4,61 @@ import java.util.Calendar;
 import java.util.Date;
 
 import model.Corso;
+import model.CorsoDiLaurea;
 import model.Dipartimento;
 import model.Scuola;
 import model.Studente;
 import persistence.dao.CorsoDao;
+import persistence.dao.CorsoDiLaureaDao;
 import persistence.dao.DipartimentoDao;
 import persistence.dao.ScuolaDao;
 import persistence.dao.StudenteDao;
+import persistence.mariadb.*;
 
 public class Main {
 	public static void main(String args[]) {				
 		try {
-			Class.forName("org.postgresql.Driver").newInstance();
-			DataSource dataSource=new DataSource("jdbc:postgresql://localhost:5432/Segreteria2019","postgres","postgres");
+			//Class.forName("org.postgresql.Driver").newInstance();
+			//DataSource dataSource=new DataSource("jdbc:postgresql://localhost:5432/Segreteria2019","postgres","postgres");
 			
+			Class.forName("org.mariadb.jdbc.Driver").newInstance();
+			DataSource dataSource = new DataSource("jdbc:mariadb://localhost:3306/Segreteria2019", "riccardo", "riccardo");
+
 			reinitDatabase(dataSource);
+			showDatabase(dataSource);
+			
 		} 
 		catch (Exception e) {
 			e.printStackTrace();
 		}			
 	}
 	
-	private static void reinitDatabase(DataSource dataSource) {
+	private static void showDatabase(DataSource dataSource) {
+		CorsoDao corsoDao = new CorsoDaoJDBC(dataSource);
+		CorsoDiLaureaDao cdlDao = new CorsoDiLaureaDaoJDBC(dataSource);
+		DipartimentoDao dipDao = new DipartimentoDaoJDBC(dataSource);
+		ScuolaDao scuolaDao = new ScuolaDaoJDBC(dataSource);
+		StudenteDao studDao = new StudenteDaoJDBC(dataSource);
+		
+		for(Corso corso : corsoDao.findAll())
+			System.out.println(corso.toString());
+		
+		for(CorsoDiLaurea cdl : cdlDao.findAll())
+			System.out.println(cdl.toString());
+		
+		for(Dipartimento dip : dipDao.findAll())
+			System.out.println(dip.toString());
+		
+		for(Scuola scuola : scuolaDao.findAll())
+			System.out.println(scuola.toString());
+		
+		for(Studente stud : studDao.findAll())
+			System.out.println(stud.toString());
+	}
+	
+	private static void reinitDatabase(DataSource dataSource) {		
+		
+		
 		Calendar cal = Calendar.getInstance();
 		cal.set(1995, Calendar.MARCH, 21); // // 21 marzo 1995
 		Date date1 = cal.getTime();
@@ -99,26 +132,8 @@ public class Main {
 		
 		corsoDao.save(corso1);
 		corsoDao.save(corso2);
-		
-		
-		System.out.println("Retrieve all Scuola");
-		for(Scuola s : scuolaDao.findAll()) {
-			System.out.println(s);
-		}
 
 //		gruppo1.addStudente(studente3);
-//		gruppoDao.update(gruppo1);
-		
-		
-		System.out.println("Elenco studenti");
-		for(Studente s : studenteDao.findAll()) {
-			System.out.println(s);
-		}	
-		
-		System.out.println("Elenco Corsi");
-		for(Corso c : corsoDao.findAll()) {
-			System.out.println(c);
-		}	
-		
+//		gruppoDao.update(gruppo1);	
 	}
 }

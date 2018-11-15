@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+html {
+	margin: 5px;
+	padding: 5px;
+	font-family: "Comic Neue";
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+html *{
+	border: 2px solid blue;
+}
+
+
+body {
+	background-color: #d3d7cf;
+	border-color: black;
+	padding: 5px;
+	margin: 0;
+}
+
+header {
+	border-color: red;
+	text-align: center;
+}
+
+div#main {
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: inherit;
+	background-color: yellow;
+	text-align: right;
+}
+
+span#dxFloatingPos {
+	float: right;
+	background-color: pink;
+}
+
+span#sxFloatingPos {
+	float: left;
+	background-color: pink;
+}
+
+span#absolutePos {
+	position: absolute;
+	bottom: 70px;
+	right: 50px;
+	background-color: pink;
+}
+
+span#relativePos {
+	position: relative;
+	top: 50px;
+	left: 10px;
+	background-color: pink;
+}
+
+footer {
+	border-color: green;
+}
+
+div > span {
+	border-color: purple;
+}
+
+</style>
+</head>
+<body>
+<header>
+	<h1>Benvenuti</h1>
+</header>
+<div id="main">
+	Questo è un main di prova<br/>
+	scopo: testing
+	<span id="dxFloatingPos">
+	Questo span è floatante a destra
+	</span>
+	<span id="sxFloatingPos">
+	Questo span è floatante a sinistra
+	</span>
+	<span id="absolutePos">
+	Questo span ha posizione assoluta
+	</span>
+	<span id="relativePos">
+	Questo span ha posizione relativa
+	</span>
+</div>
+<footer>
+&copy;Riccardo Giordano
+</footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package persistence;
+package persistence.postgres;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +8,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 import model.Dipartimento;
+import persistence.DataSource;
+import persistence.PersistenceException;
 import persistence.dao.DipartimentoDao;
 
 public class DipartimentoDaoJDBC implements DipartimentoDao {
